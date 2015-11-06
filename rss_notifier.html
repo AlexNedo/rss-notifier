@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="jquery-2.1.4.js"></script>
+<script src="rss_notifier.js" type="application/javascript"></script>
+<style>
+body{
+    background-color: lightgray;
+}
+
+.item{
+    background-color: white;
+    border-radius: 10px;
+    width: 200px;
+    margin-top: 10px;   
+    margin: 10px auto;
+}
+
+.new-item{
+    animation-name: shake;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    background-color: palegreen;
+}
+
+.title{
+    text-align: center;
+    padding-top: 10px;
+}
+
+hr{
+    margin: 0;
+}
+
+.body{
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-radius: 0 0 10px 10px;
+    display:block;
+}
+
+.body:hover{
+    background-color: silver;
+    cursor: pointer;
+}
+
+@keyframes shake {
+    0% {transform: rotate(0deg);}
+    5% {transform: rotate(10deg);}
+    10% {transform: rotate(-10deg);}
+    15% {transform: rotate(10deg);}
+    20% {transform: rotate(-10deg);}
+    25% {transform: rotate(10deg);}
+    30% {transform: rotate(-10deg);}
+    35% {transform: rotate(0deg);}
+    100% {transform: rotate(0deg);}
+}
+</style>
+</head>
+
+<body>
+<div id="container"></div>
+</body>
+</html>
